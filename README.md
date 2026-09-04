@@ -1,14 +1,16 @@
 # DataInspect
 
-A dependency-free CLI for exploring structured tabular data without modifying the source files.
+> Understand structured data quickly from the command line.
 
-## Features
+DataInspect is a dependency-free CLI for exploring structured tabular data without modifying the source files.
 
-- CSV inspection
+## Highlights
+
+- CSV and delimited-text inspection
 - Column and row summaries
-- Type inference
+- Basic type inference
 - Missing-value counts
-- Delimited text statistics
+- Human-readable diagnostics
 - JSON output for automation
 
 ## Usage
@@ -18,6 +20,28 @@ datainspect data.csv
 datainspect data.csv --json
 datainspect data.csv --columns
 ```
+
+## Workflow
+
+```text
+data file
+   ↓
+parse structure
+   ↓
+profile columns
+   ↓
+summary / JSON
+```
+
+## Use Cases
+
+- Dataset exploration
+- Quick CSV diagnostics
+- Data-cleaning preparation
+- Developer tooling
+- Lightweight automation
+
+DataInspect does not modify the source dataset during inspection.
 
 ## Development
 
@@ -29,6 +53,6 @@ python -m unittest discover -s tests -v
 
 MIT
 
-## Credits
+Built by **Meduuv**.
 
-Built by Medu: https://guns.lol/meduu
+[More projects](https://github.com/meduuv?tab=repositories) · [guns.lol/meduu](https://guns.lol/meduu)
